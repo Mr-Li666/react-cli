@@ -3,7 +3,7 @@ import './App.less';
 import React, { useState } from 'react';
 
 import logo from './assets/logo.svg';
-import Home from './pages/home';
+import { Home } from './pages/home/home';
 function App() {
   return (
     <div className="App">

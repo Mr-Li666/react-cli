@@ -1,8 +1,18 @@
-import { Home } from '@/pages';
+import { Home, Root } from '@/pages';
 
 export const routes = [
   {
     path: '/',
-    element: <Home />,
+    element: <Root />,
+    children: [
+      {
+        path: 'home',
+        element: <Home />,
+      },
+      {
+        path: 'home1',
+        element: <>home1</>,
+      },
+    ],
   },
 ];
